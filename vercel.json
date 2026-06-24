@@ -1,0 +1,17 @@
+{
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": "./",
+  "installCommand": "echo 'No dependencies to install'",
+  "env": {},
+  "headers": [
+    {
+      "source": "/assets/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
